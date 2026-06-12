@@ -1,0 +1,88 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: Narvar
+providerId: narvar
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+description: >
+  Narvar does not publicly disclose pricing. The platform is enterprise-focused with
+  custom quotes based on order volume, modules selected, and implementation scope.
+  Pricing typically starts around $40,000/year for entry-level enterprise plans and
+  scales with shipment volume and module adoption.
+type: enterprise
+plans:
+  - name: Starter
+    description: Basic post-purchase tracking and email-based customer support for smaller retailers.
+    type: paid
+    entries:
+      - name: Monthly Fee
+        type: boolean
+        value: true
+        description: Estimated ~$200/month for basic tracking features
+      - name: Order Tracking
+        type: boolean
+        value: true
+      - name: Email Notifications
+        type: boolean
+        value: true
+      - name: Carrier Integrations
+        type: quota
+        limit: 50
+        metric: carriers
+        description: Access to a subset of carrier integrations
+  - name: Pro
+    description: Adds custom notifications, priority support, and broader integration options for growing retailers.
+    type: paid
+    entries:
+      - name: Monthly Fee
+        type: boolean
+        value: true
+        description: Estimated ~$500/month
+      - name: Custom Notifications
+        type: boolean
+        value: true
+      - name: Priority Support
+        type: boolean
+        value: true
+      - name: Multi-Channel Notifications
+        type: boolean
+        value: true
+      - name: Returns Management
+        type: boolean
+        value: true
+  - name: Enterprise
+    description: >
+      Full platform access including AI-powered IRIS engine, custom integrations, dedicated
+      account management, returns/exchanges, delivery protection, fraud prevention, and
+      access to all 1,000+ carrier integrations. Priced based on annual shipment volume.
+    type: enterprise
+    entries:
+      - name: Annual Contract
+        type: boolean
+        value: true
+        description: Custom pricing, typically starting $40,000+/year
+      - name: Shipment Volume
+        type: metered
+        metric: shipments
+        description: Pricing scales with annual shipment volume
+      - name: IRIS AI Engine
+        type: boolean
+        value: true
+      - name: All Modules Access
+        type: boolean
+        value: true
+        description: Promise, Secure, Track, Notify, Assist, Shield
+      - name: Carrier Integrations
+        type: quota
+        limit: 1000
+        metric: carriers
+      - name: Dedicated Account Manager
+        type: boolean
+        value: true
+      - name: Custom Integrations
+        type: boolean
+        value: true
+      - name: SLA
+        type: boolean
+        value: true

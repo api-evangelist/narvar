@@ -1,0 +1,36 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: Narvar
+providerId: narvar
+created: '2026-06-12'
+modified: '2026-06-12'
+description: >
+  Narvar does not publicly document rate limits. The Microsoft Power Platform connector
+  confirms a throttle of 100 API calls per connection per 60 seconds. Enterprise
+  customers should consult their Narvar account team for contracted limits.
+retryAfter:
+  header: Retry-After
+  description: Returned with a 429 response to indicate when the client may retry.
+throttled:
+  statusCode: 429
+  description: Too Many Requests — request rate exceeded for the connection or account.
+limits:
+  - scope: connection
+    metric: requests
+    limit: 100
+    timeFrame: 60
+    description: >
+      Per Microsoft Power Platform connector documentation: 100 API calls per connection
+      per 60-second renewal period.
+    source: https://learn.microsoft.com/en-us/connectors/narvar/
+  - scope: account
+    metric: requests
+    limit: null
+    timeFrame: null
+    description: >
+      Enterprise account-level rate limits are not publicly documented. Contact Narvar
+      support or your account manager for contracted thresholds.
+notes: >
+  Narvar uses Account ID and Auth Token for API authentication. API credentials are
+  generated via the Narvar Hub dashboard under Advanced Settings > API Accounts.
+  V2/V3 API tokens are available for the Ship API.

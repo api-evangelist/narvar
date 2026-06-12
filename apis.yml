@@ -1,0 +1,87 @@
+aid: narvar
+name: Narvar
+description: >
+  Narvar is a post-purchase commerce platform serving 1,500+ global retail brands with intelligent
+  personalization and automation across delivery, returns, and customer engagement. The platform
+  provides APIs for order creation and updates, shipment tracking, returns and exchange management,
+  and proactive multi-channel customer notifications. Narvar's IRIS AI engine is trained on 74 billion+
+  annual interactions to deliver predictive post-purchase intelligence. Integrations span 1,000+ carriers
+  and major commerce platforms including Shopify, Salesforce, Magento, and BigCommerce.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Post-Purchase
+  - Order Tracking
+  - Delivery Notifications
+  - Returns
+  - Exchanges
+  - Ecommerce
+  - Shipments
+  - Customer Experience
+url: https://raw.githubusercontent.com/api-evangelist/narvar/refs/heads/main/apis.yml
+created: '2026-06-12'
+modified: '2026-06-12'
+specificationVersion: '0.19'
+apis:
+  - name: Narvar Order API
+    description: Create and update orders, including order items, billing, customer, and fulfillment data, to power post-purchase tracking experiences.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
+    baseURL: https://api.narvar.com
+    tags:
+      - Orders
+      - Post-Purchase
+      - Ecommerce
+    properties:
+      - type: Documentation
+        url: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
+      - type: MicrosoftConnector
+        url: https://learn.microsoft.com/en-us/connectors/narvar/
+  - name: Narvar Shipment API
+    description: Submit and update shipment records with carrier, tracking number, and destination data to enable real-time order tracking and delivery notifications.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://support.narvar.com/hc/en-us
+    baseURL: https://api.narvar.com
+    tags:
+      - Shipments
+      - Tracking
+      - Carriers
+    properties:
+      - type: Documentation
+        url: https://support.narvar.com/hc/en-us
+  - name: Narvar Returns API
+    description: Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications for return status updates.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://support.narvar.com/hc/en-us
+    baseURL: https://api.narvar.com
+    tags:
+      - Returns
+      - Exchanges
+      - Reverse Logistics
+    properties:
+      - type: Documentation
+        url: https://support.narvar.com/hc/en-us
+common:
+  - type: Website
+    url: https://corp.narvar.com/
+  - type: Documentation
+    url: https://support.narvar.com/hc/en-us
+  - type: GitHubOrganization
+    url: https://github.com/narvar
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/narvar
+  - type: X
+    url: https://twitter.com/narvarinc
+  - type: Blog
+    url: https://corp.narvar.com/blog
+  - type: StatusPage
+    url: https://status.narvar.com/
+  - type: Plans
+    url: plans/narvar-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/narvar-rate-limits.yml
+  - type: FinOps
+    url: finops/narvar-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

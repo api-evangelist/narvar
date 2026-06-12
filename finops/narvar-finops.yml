@@ -1,0 +1,53 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+provider: Narvar
+providerId: narvar
+created: '2026-06-12'
+modified: '2026-06-12'
+description: >
+  Narvar is an enterprise SaaS platform with custom pricing based on shipment volume,
+  module selection, and implementation scope. There is no self-serve pricing or
+  consumption-based public billing. All cost management is negotiated contractually.
+billingModel: subscription
+focusColumns:
+  - BilledCost
+  - BillingPeriodStart
+  - BillingPeriodEnd
+  - ServiceName
+  - ResourceType
+  - UsageQuantity
+  - UsageUnit
+meters:
+  - name: Shipment Volume
+    unit: shipments/year
+    description: Annual number of shipments processed through Narvar APIs, primary driver of contract cost.
+    billable: true
+  - name: API Calls
+    unit: requests/month
+    description: Total API requests made to Narvar Order, Shipment, and Returns endpoints.
+    billable: false
+    notes: Included in enterprise subscription; not metered separately in public documentation.
+  - name: Module Licenses
+    unit: modules
+    description: Number of product modules licensed (Promise, Secure, Track, Notify, Assist, Shield).
+    billable: true
+principles:
+  - name: Visibility
+    description: >
+      Track shipment volumes and API call volumes via internal logging or Narvar Hub
+      analytics dashboard. Monitor usage against contracted thresholds to anticipate
+      renewal negotiations.
+    actions:
+      - Monitor monthly shipment throughput via Order API telemetry.
+      - Review Narvar Hub dashboard for post-purchase engagement metrics.
+      - Export billing invoices and reconcile against contracted annual rates.
+  - name: Optimization
+    description: >
+      Optimize costs by right-sizing module licenses to active use cases, consolidating
+      carrier integrations to those with highest shipment volume, and negotiating volume
+      tiers at renewal based on actual annual shipment counts.
+    actions:
+      - Audit which Narvar modules (Promise, Notify, Shield, etc.) are actively generating ROI.
+      - Negotiate volume tier pricing at contract renewal using actual annual shipment data.
+      - Evaluate self-service returns automation to reduce customer support costs offset against platform fees.
+      - Compare total cost of ownership against alternatives (AfterShip, ParcelLab, Outvio).
