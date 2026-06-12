@@ -1,0 +1,31 @@
+vocabulary:
+  - term: order
+    definition: A customer purchase record containing items, billing, shipment, and fulfillment data submitted to Narvar for post-purchase tracking.
+  - term: order_number
+    definition: The primary identifier for an order, used to create, update, and retrieve order records in Narvar.
+  - term: order_item
+    definition: An individual product line within an order, identified by SKU and item_id, with quantity and fulfillment status.
+  - term: shipment
+    definition: A physical dispatch of one or more order items, including carrier, tracking number, ship date, and destination address.
+  - term: tracking_number
+    definition: The carrier-assigned identifier used to track the physical movement of a shipment.
+  - term: carrier
+    definition: The logistics provider responsible for delivering a shipment (e.g., ups, fedex, usps, lasership, ontrac).
+  - term: fulfillment_status
+    definition: The current state of an order item's delivery lifecycle within the Narvar platform.
+  - term: return
+    definition: A reverse logistics event where a customer sends back purchased items, managed through Narvar's Returns API.
+  - term: pickup
+    definition: An in-store or collection-point fulfillment option where customers retrieve their order at a physical location.
+  - term: post_purchase
+    definition: The phase of the commerce lifecycle occurring after an order is placed, encompassing shipping, tracking, delivery, and returns.
+  - term: notification_preferences
+    definition: Customer-specified channels (e.g., email, SMS) through which Narvar sends proactive order status updates.
+  - term: item_promise_date
+    definition: The expected shipment date communicated to the customer for a specific order item.
+  - term: billing
+    definition: Payment and invoicing information associated with an order, including amount, tax, and payment method details.
+  - term: customer
+    definition: The end consumer who placed the order, identified by customer_id with associated address and contact information.
+  - term: IRIS_AI
+    definition: Narvar's AI engine trained on 74 billion+ annual interactions to deliver predictive post-purchase intelligence.

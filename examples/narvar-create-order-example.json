@@ -1,0 +1,88 @@
+{
+  "order_info": {
+    "order_number": "ORD-20260101-9876",
+    "order_date": "2026-01-01T10:30:00Z",
+    "currency_code": "USD",
+    "selected_ship_method": "standard",
+    "order_items": [
+      {
+        "sku": "JACKET-BLK-M",
+        "item_id": "item-001",
+        "name": "Classic Black Jacket",
+        "item_image": "https://example-retailer.com/images/jacket-blk-m.jpg",
+        "item_url": "https://example-retailer.com/products/classic-black-jacket",
+        "quantity": 1,
+        "unit_price": 129.99,
+        "item_promise_date": "2026-01-05"
+      }
+    ],
+    "shipments": [
+      {
+        "carrier": "ups",
+        "tracking_number": "1Z999AA10123456784",
+        "ship_date": "2026-01-02",
+        "items_info": [
+          {
+            "sku": "JACKET-BLK-M",
+            "item_id": "item-001",
+            "quantity": 1
+          }
+        ],
+        "shipped_to": {
+          "first_name": "Jane",
+          "last_name": "Smith",
+          "email": "jane.smith@example.com",
+          "phone": "555-555-1234",
+          "address": {
+            "street_1": "123 Main Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94105",
+            "country": "US"
+          }
+        }
+      }
+    ],
+    "billing": {
+      "amount": 139.98,
+      "tax_amount": 9.99,
+      "shipping_handling": 0.00,
+      "billed_to": {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "address": {
+          "street_1": "123 Main Street",
+          "city": "San Francisco",
+          "state": "CA",
+          "zip": "94105",
+          "country": "US"
+        }
+      },
+      "payments": [
+        {
+          "method": "credit_card",
+          "merchant": "Visa",
+          "expiration_date": "2028-06"
+        }
+      ]
+    },
+    "customer": {
+      "customer_id": "cust-55443",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "phone": "555-555-1234",
+      "customer_type": "registered",
+      "customer_tier": "gold",
+      "notification_preferences": ["email", "sms"],
+      "address": {
+        "street_1": "123 Main Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94105",
+        "country": "US"
+      }
+    }
+  }
+}

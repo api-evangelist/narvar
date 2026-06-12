@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/narvar/main/json-schema/narvar-order-schema.json",
+  "title": "NarvarOrder",
+  "description": "Schema for a Narvar order submitted via the Order API for post-purchase tracking.",
+  "type": "object",
+  "properties": {
+    "order_info": {
+      "type": "object",
+      "description": "Top-level container for all order data.",
+      "required": ["order_number"],
+      "properties": {
+        "order_number": {
+          "type": "string",
+          "description": "Primary identifier for the order."
+        },
+        "order_date": {
+          "type": "string",
+          "description": "Date the order was placed (ISO 8601 or retailer format)."
+        },
+        "currency_code": {
+          "type": "string",
+          "description": "ISO 4217 currency code for the order (e.g., USD).",
+          "maxLength": 3
+        },
+        "order_promise_date": {
+          "type": "string",
+          "description": "Promised delivery date for the overall order."
+        },
+        "selected_ship_method": {
+          "type": "string",
+          "description": "Shipping method chosen by the customer at checkout."
+        },
+        "order_items": {
+          "type": "array",
+          "description": "List of individual product lines in the order.",
+          "items": {
+            "$ref": "#/$defs/OrderItem"
+          }
+        },
+        "shipments": {
+          "type": "array",
+          "description": "Outbound shipment records associated with the order.",
+          "items": {
+            "$ref": "#/$defs/Shipment"
+          }
+        },
+        "pickups": {
+          "type": "array",
+          "description": "In-store or collection-point pickup records.",
+          "items": {
+            "$ref": "#/$defs/Pickup"
+          }
+        },
+        "billing": {
+          "$ref": "#/$defs/Billing"
+        },
+        "customer": {
+          "$ref": "#/$defs/Customer"
+        },
+        "events": {
+          "type": "array",
+          "description": "Order-level lifecycle events.",
+          "items": {
+            "$ref": "#/$defs/Event"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "Address": {
+      "type": "object",
+      "description": "A postal address.",
+      "properties": {
+        "street_1": {"type": "string"},
+        "street_2": {"type": "string"},
+        "city": {"type": "string"},
+        "state": {"type": "string"},
+        "zip": {"type": "string"},
+        "country": {"type": "string"}
+      }
+    },
+    "Person": {
+      "type": "object",
+      "description": "A named individual with contact details.",
+      "properties": {
+        "first_name": {"type": "string"},
+        "last_name": {"type": "string"},
+        "email": {"type": "string", "format": "email"},
+        "phone": {"type": "string"},
+        "address": {"$ref": "#/$defs/Address"},
+        "location_id": {"type": "string"}
+      }
+    },
+    "OrderItem": {
+      "type": "object",
+      "description": "A single product line within an order.",
+      "required": ["sku"],
+      "properties": {
+        "sku": {"type": "string", "description": "Primary key for the order item."},
+        "item_id": {"type": "string", "description": "Granular item identifier, more specific than SKU."},
+        "name": {"type": "string"},
+        "item_image": {"type": "string", "format": "uri"},
+        "item_url": {"type": "string", "format": "uri"},
+        "quantity": {"type": "integer", "minimum": 0},
+        "unit_price": {"type": "number"},
+        "line_price": {"type": "number"},
+        "original_unit_price": {"type": "number"},
+        "original_line_price": {"type": "number"},
+        "discount_amount": {"type": "number"},
+        "discount_percent": {"type": "number"},
+        "item_promise_date": {"type": "string"},
+        "fulfillment_status": {"type": "string"},
+        "fulfillment_type": {"type": "string"},
+        "is_backordered": {"type": "boolean"},
+        "is_gift": {"type": "boolean"},
+        "is_final_sale": {"type": "boolean"},
+        "final_sale_date": {"type": "string"},
+        "line_number": {"type": "integer"},
+        "anticipated_ship_date": {"type": "string"},
+        "categories": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "events": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/Event"}
+        }
+      }
+    },
+    "Shipment": {
+      "type": "object",
+      "description": "A physical dispatch of order items.",
+      "properties": {
+        "carrier": {
+          "type": "string",
+          "description": "Normalized carrier moniker.",
+          "enum": ["ups", "fedex", "usps", "lasership", "ontrac"]
+        },
+        "tracking_number": {"type": "string"},
+        "ship_date": {"type": "string"},
+        "ship_method": {"type": "string"},
+        "carrier_service": {"type": "string"},
+        "ship_source": {"type": "string"},
+        "ship_discount": {"type": "number"},
+        "ship_tax": {"type": "number"},
+        "ship_total": {"type": "number"},
+        "items_info": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sku": {"type": "string"},
+              "item_id": {"type": "string"},
+              "quantity": {"type": "integer"}
+            }
+          }
+        },
+        "shipped_to": {"$ref": "#/$defs/Person"},
+        "shipped_from": {
+          "allOf": [
+            {"$ref": "#/$defs/Person"},
+            {
+              "type": "object",
+              "properties": {
+                "company_name": {"type": "string"}
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Pickup": {
+      "type": "object",
+      "description": "An in-store or collection-point pickup record.",
+      "properties": {
+        "id": {"type": "string"},
+        "type": {"type": "string"},
+        "eta": {"type": "string"},
+        "pickup_by_date": {"type": "string"},
+        "carrier": {"type": "string"},
+        "tracking_number": {"type": "string"},
+        "ship_date": {"type": "string"},
+        "collection_token": {"type": "string"},
+        "items_info": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sku": {"type": "string"},
+              "item_id": {"type": "string"},
+              "quantity": {"type": "integer"}
+            }
+          }
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "code": {"type": "string"},
+            "date": {"type": "string"},
+            "message": {"type": "string"}
+          }
+        },
+        "store": {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string"},
+            "name": {"type": "string"},
+            "url": {"type": "string", "format": "uri"},
+            "phone_number": {"type": "string"},
+            "store_area": {"type": "string"},
+            "address": {"$ref": "#/$defs/Address"},
+            "hours": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "open": {"type": "string"},
+                  "close": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Billing": {
+      "type": "object",
+      "description": "Payment and invoice details for the order.",
+      "properties": {
+        "amount": {"type": "number"},
+        "tax_amount": {"type": "number"},
+        "tax_rate": {"type": "number"},
+        "shipping_handling": {"type": "number"},
+        "billed_to": {"$ref": "#/$defs/Person"},
+        "payments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "method": {"type": "string"},
+              "merchant": {"type": "string"},
+              "expiration_date": {"type": "string"},
+              "is_gift_card": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "Customer": {
+      "allOf": [
+        {"$ref": "#/$defs/Person"},
+        {
+          "type": "object",
+          "properties": {
+            "customer_id": {"type": "string"},
+            "customer_type": {"type": "string"},
+            "customer_tier": {"type": "string"},
+            "notification_preferences": {
+              "type": "array",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      ]
+    },
+    "Event": {
+      "type": "object",
+      "description": "A lifecycle event on an order or order item.",
+      "properties": {
+        "event": {"type": "string"},
+        "date": {"type": "string"},
+        "quantity": {"type": "integer"},
+        "sequence": {"type": "integer"}
+      }
+    },
+    "ApiResponse": {
+      "type": "object",
+      "description": "Standard Narvar API response envelope.",
+      "properties": {
+        "status": {"type": "string"},
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {"type": "string"},
+              "message": {"type": "string"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

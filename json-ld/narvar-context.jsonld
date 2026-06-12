@@ -1,0 +1,179 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "narvar": "https://corp.narvar.com/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Order": "narvar:Order",
+    "OrderItem": "narvar:OrderItem",
+    "Shipment": "narvar:Shipment",
+    "Pickup": "narvar:Pickup",
+    "Return": "narvar:Return",
+    "Customer": "narvar:Customer",
+    "Billing": "narvar:Billing",
+
+    "order_number": {
+      "@id": "narvar:orderNumber",
+      "@type": "xsd:string"
+    },
+    "order_date": {
+      "@id": "narvar:orderDate",
+      "@type": "xsd:string"
+    },
+    "order_items": {
+      "@id": "narvar:orderItems",
+      "@container": "@list"
+    },
+    "shipments": {
+      "@id": "narvar:shipments",
+      "@container": "@list"
+    },
+    "pickups": {
+      "@id": "narvar:pickups",
+      "@container": "@list"
+    },
+    "sku": {
+      "@id": "schema:productID",
+      "@type": "xsd:string"
+    },
+    "item_id": {
+      "@id": "narvar:itemId",
+      "@type": "xsd:string"
+    },
+    "item_image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "item_url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "quantity": {
+      "@id": "schema:orderQuantity",
+      "@type": "xsd:integer"
+    },
+    "unit_price": {
+      "@id": "schema:price",
+      "@type": "xsd:decimal"
+    },
+    "tracking_number": {
+      "@id": "narvar:trackingNumber",
+      "@type": "xsd:string"
+    },
+    "carrier": {
+      "@id": "narvar:carrier",
+      "@type": "xsd:string"
+    },
+    "ship_date": {
+      "@id": "narvar:shipDate",
+      "@type": "xsd:string"
+    },
+    "item_promise_date": {
+      "@id": "narvar:itemPromiseDate",
+      "@type": "xsd:string"
+    },
+    "fulfillment_status": {
+      "@id": "narvar:fulfillmentStatus",
+      "@type": "xsd:string"
+    },
+    "fulfillment_type": {
+      "@id": "narvar:fulfillmentType",
+      "@type": "xsd:string"
+    },
+    "shipped_to": {
+      "@id": "schema:deliveryAddress"
+    },
+    "shipped_from": {
+      "@id": "schema:originAddress"
+    },
+    "first_name": {
+      "@id": "schema:givenName",
+      "@type": "xsd:string"
+    },
+    "last_name": {
+      "@id": "schema:familyName",
+      "@type": "xsd:string"
+    },
+    "email": {
+      "@id": "schema:email",
+      "@type": "xsd:string"
+    },
+    "phone": {
+      "@id": "schema:telephone",
+      "@type": "xsd:string"
+    },
+    "street_1": {
+      "@id": "schema:streetAddress",
+      "@type": "xsd:string"
+    },
+    "city": {
+      "@id": "schema:addressLocality",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "schema:addressRegion",
+      "@type": "xsd:string"
+    },
+    "zip": {
+      "@id": "schema:postalCode",
+      "@type": "xsd:string"
+    },
+    "country": {
+      "@id": "schema:addressCountry",
+      "@type": "xsd:string"
+    },
+    "customer_id": {
+      "@id": "narvar:customerId",
+      "@type": "xsd:string"
+    },
+    "customer_type": {
+      "@id": "narvar:customerType",
+      "@type": "xsd:string"
+    },
+    "customer_tier": {
+      "@id": "narvar:customerTier",
+      "@type": "xsd:string"
+    },
+    "currency_code": {
+      "@id": "schema:priceCurrency",
+      "@type": "xsd:string"
+    },
+    "amount": {
+      "@id": "schema:totalPrice",
+      "@type": "xsd:decimal"
+    },
+    "tax_amount": {
+      "@id": "schema:taxValue",
+      "@type": "xsd:decimal"
+    },
+    "notification_preferences": {
+      "@id": "narvar:notificationPreferences",
+      "@container": "@list"
+    },
+    "order_info": {
+      "@id": "narvar:orderInfo"
+    },
+    "billing": {
+      "@id": "narvar:billing"
+    },
+    "customer": {
+      "@id": "narvar:customer"
+    },
+    "address": {
+      "@id": "schema:PostalAddress"
+    },
+    "status": {
+      "@id": "narvar:status",
+      "@type": "xsd:string"
+    },
+    "messages": {
+      "@id": "narvar:messages",
+      "@container": "@list"
+    }
+  }
+}
