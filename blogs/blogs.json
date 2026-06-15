@@ -49,7 +49,7 @@
       "title": "Luxury Retailers Bridging Ecommerce and In-Store",
       "url": "https://corp.narvar.com/blog/bridging-ecommerce-and-in-store",
       "pubDate": "2026-04-16",
-      "description": "Your digital playbook for prestige retail is here — learn how luxury retailers are successfully bridging the gap between ecommerce and in-store retail."
+      "description": "Your digital playbook for prestige retail is here \u2014 learn how luxury retailers are successfully bridging the gap between ecommerce and in-store retail."
     },
     {
       "title": "Returns Management: Solutions, Processes and Best Practices",
@@ -63,5 +63,24 @@
       "pubDate": "2026-04-15",
       "description": "Distribution networks can enhance returns processing through increased node utilization for greater speed and sustainability."
     }
-  ]
+  ],
+  "repo": "narvar",
+  "feeds": [
+    {
+      "source": "https://twitter.com/narvarinc",
+      "feed_url": "https://twitter.com/narvarinc",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://corp.narvar.com/blog/rss.xml",
+      "feed_url": "https://corp.narvar.com/blog/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
