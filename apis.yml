@@ -8,7 +8,7 @@ description: >
   annual interactions to deliver predictive post-purchase intelligence. Integrations span 1,000+ carriers
   and major commerce platforms including Shopify, Salesforce, Magento, and BigCommerce.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Post-Purchase
   - Order Tracking
@@ -25,7 +25,7 @@ specificationVersion: '0.19'
 apis:
   - name: Narvar Order API
     description: Create and update orders, including order items, billing, customer, and fulfillment data, to power post-purchase tracking experiences.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
     baseURL: https://api.narvar.com
     tags:
@@ -45,7 +45,7 @@ apis:
         url: examples/narvar-create-order-example.json
   - name: Narvar Shipment API
     description: Submit and update shipment records with carrier, tracking number, and destination data to enable real-time order tracking and delivery notifications.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://support.narvar.com/hc/en-us
     baseURL: https://api.narvar.com
     tags:
@@ -57,7 +57,7 @@ apis:
         url: https://support.narvar.com/hc/en-us
   - name: Narvar Returns API
     description: Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications for return status updates.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://support.narvar.com/hc/en-us
     baseURL: https://api.narvar.com
     tags:
