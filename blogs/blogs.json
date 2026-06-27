@@ -1,86 +1,21 @@
 {
-  "rssUrl": "https://corp.narvar.com/blog/rss.xml",
-  "blogUrl": "https://corp.narvar.com/blog",
-  "lastFetched": "2026-06-12",
-  "posts": [
-    {
-      "title": "Grinch-Proof, Scrooge-Savvy: Protect Your Margins Post-Purchase",
-      "url": "https://corp.narvar.com/blog/grinch-proof-scrooge-savvy-protect-your-margins-post-purchase",
-      "pubDate": "2026-04-30",
-      "description": "Protect holiday margins post-purchase with smarter returns, fraud prevention, self-service, and delivery protection strategies."
-    },
-    {
-      "title": "Holiday Revenue: New 2025 Shopping Data Retailers Need",
-      "url": "https://corp.narvar.com/blog/all-i-want-for-christmas-is-revenue-new-holiday-shopping-data-shows-how-to-earn-it",
-      "pubDate": "2026-04-30",
-      "description": "Dive into Narvar's 2025 holiday shopping data and learn how to convert first-time buyers into loyal shoppers that drive 20% higher AOV than new customers."
-    },
-    {
-      "title": "The smart retailer's checklist for an effective returns solution",
-      "url": "https://corp.narvar.com/blog/smart-retailers-returns-checklist",
-      "pubDate": "2026-04-16",
-      "description": "Returns platforms must evolve to address margin protection, fraud mitigation, and elevated consumer satisfaction."
-    },
-    {
-      "title": "Reimagining Retail Returns: Balance Loyalty and Profit",
-      "url": "https://corp.narvar.com/blog/returns-reimagined-protect-profit-preserve-loyalty-scale-smarter-with-ai",
-      "pubDate": "2026-04-16",
-      "description": "As return rates rise and customer expectations soar, retailers are looking Narvar Shield to defend margins and deepen customer relationships."
-    },
-    {
-      "title": "How to make product returns a competitive advantage",
-      "url": "https://corp.narvar.com/blog/how-to-make-product-returns-a-competitive-advantage",
-      "pubDate": "2026-04-16",
-      "description": "Turn returns into a growth engine. Learn how to transform your return policy into a competitive advantage that builds loyalty and recovers revenue."
-    },
-    {
-      "title": "Optimizing retail returns in the face of rising tariffs",
-      "url": "https://corp.narvar.com/blog/optimizing-retail-returns-in-the-face-of-rising-tariffs",
-      "pubDate": "2026-04-16",
-      "description": "Retailers must balance cost reduction with inventory optimization when selecting returns solutions amid tariff pressures."
-    },
-    {
-      "title": "Key Product Returns Trends in 2024 and Beyond",
-      "url": "https://corp.narvar.com/blog/key-product-returns-trends-in-2024-and-beyond",
-      "pubDate": "2026-04-16",
-      "description": "What are retailers doing to increase efficiency and reduce costs when it comes to product returns? Here are specific examples to implement for your brand."
-    },
-    {
-      "title": "Luxury Retailers Bridging Ecommerce and In-Store",
-      "url": "https://corp.narvar.com/blog/bridging-ecommerce-and-in-store",
-      "pubDate": "2026-04-16",
-      "description": "Your digital playbook for prestige retail is here \u2014 learn how luxury retailers are successfully bridging the gap between ecommerce and in-store retail."
-    },
-    {
-      "title": "Returns Management: Solutions, Processes and Best Practices",
-      "url": "https://corp.narvar.com/blog/returns-management-solutions-processes-best-practices",
-      "pubDate": "2026-04-15",
-      "description": "Read our ultimate returns management guide, including returns management solutions, processes, definitions, best practices, and more."
-    },
-    {
-      "title": "Why Retailers' Distribution Nodes Should Accept Returns",
-      "url": "https://corp.narvar.com/blog/distribution-nodes-for-returns",
-      "pubDate": "2026-04-15",
-      "description": "Distribution networks can enhance returns processing through increased node utilization for greater speed and sustainability."
-    }
-  ],
   "repo": "narvar",
   "feeds": [
+    {
+      "source": "https://corp.narvar.com/blog/rss.xml",
+      "feed_url": "https://corp.narvar.com/blog/rss.xml",
+      "title": "",
+      "saved": 16,
+      "method": "feed"
+    },
     {
       "source": "https://twitter.com/narvarinc",
       "feed_url": "https://twitter.com/narvarinc",
       "title": "",
       "saved": 0,
       "method": "none"
-    },
-    {
-      "source": "https://corp.narvar.com/blog/rss.xml",
-      "feed_url": "https://corp.narvar.com/blog/rss.xml",
-      "title": "",
-      "saved": 0,
-      "method": "feed"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 17
 }
