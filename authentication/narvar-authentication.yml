@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/narvar-order-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  description: Account ID and Auth Tokens for Narvar API authentication
+  sources:
+  - openapi/narvar-order-openapi.yml

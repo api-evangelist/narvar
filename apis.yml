@@ -68,6 +68,12 @@ apis:
       - type: Documentation
         url: https://support.narvar.com/hc/en-us
 common:
+  - type: TrustCenter
+    url: security/narvar-trust-center.yml
+  - type: DomainSecurity
+    url: security/narvar-domain-security.yml
+  - type: Authentication
+    url: authentication/narvar-authentication.yml
   - type: Website
     url: https://corp.narvar.com/
   - type: Documentation

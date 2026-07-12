@@ -1,0 +1,32 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: corp.narvar.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  7 15:42:19 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: support.narvar.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 19 23:41:49 2026 GMT
+  hsts: true
+  hsts_max_age: 259200
+- host: api.narvar.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jul 13 23:59:59 2026 GMT
+  hsts: null
+domains:
+- domain: narvar.com
+  dnssec: false
+  caa:
+  - 0 issuewild "Digicert.com"
+  - 0 issuewild "letsencrypt.org"
+  - 0 issuewild "sectigo.com"
+  - 0 iodef "mailto:info@narvar.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
