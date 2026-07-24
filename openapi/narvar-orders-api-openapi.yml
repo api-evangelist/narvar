@@ -1,8 +1,7 @@
 openapi: 3.0.3
 info:
-  title: Narvar
-  description: Narvar provides connection with Narvar portal. Alows create and update
-    of orders on narvar portal as well as viewing already created orders.
+  title: Narvar Orders API
+  description: Narvar provides connection with Narvar portal. Alows create and update of orders on narvar portal as well as viewing already created orders.
   version: '1.0'
   contact:
     name: Microsoft Dynamics
@@ -13,20 +12,16 @@ servers:
   description: Narvar Production API
 security:
 - basicAuth: []
-components:
-  securitySchemes:
-    basicAuth:
-      type: http
-      scheme: basic
-      description: Account ID and Auth Tokens for Narvar API authentication
+tags:
+- name: Orders
 paths:
   /orders:
     post:
       operationId: PostCreateUpdateOrders
       summary: Create or Update Orders
-      description: This will create a new order or send new information about an existing
-        order
-      tags: []
+      description: This will create a new order or send new information about an existing order
+      tags:
+      - Orders
       responses:
         '200':
           description: '200'
@@ -323,7 +318,8 @@ paths:
       operationId: GetRetrieveOrder
       summary: Retrieve Order
       description: This operation is used to retrieve order details
-      tags: []
+      tags:
+      - Orders
       responses:
         '200':
           description: '200'
@@ -1141,7 +1137,8 @@ paths:
       operationId: PutCreateUpdateShipments
       summary: Create or Update Shipments
       description: This will update an order with a shipment record or change
-      tags: []
+      tags:
+      - Orders
       responses:
         '200':
           description: '200'
@@ -1343,3 +1340,9 @@ paths:
                             title: tracking_number
                       description: shipments
                   description: order_info
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: Account ID and Auth Tokens for Narvar API authentication
