@@ -8,7 +8,20 @@ description: >
   annual interactions to deliver predictive post-purchase intelligence. Integrations span 1,000+ carriers
   and major commerce platforms including Shopify, Salesforce, Magento, and BigCommerce.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Paid · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/narvar.png
 tags:
   - Post-Purchase
   - Order Tracking
@@ -23,50 +36,52 @@ created: '2026-06-12'
 modified: '2026-06-12'
 specificationVersion: '0.19'
 apis:
-  - name: Narvar Order API
-    description: Create and update orders, including order items, billing, customer, and fulfillment data, to power post-purchase tracking experiences.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
-    baseURL: https://api.narvar.com
-    tags:
-      - Orders
-      - Post-Purchase
-      - Ecommerce
-    properties:
-      - type: Documentation
-        url: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
-      - type: MicrosoftConnector
-        url: https://learn.microsoft.com/en-us/connectors/narvar/
-      - type: OpenAPI
-        url: openapi/narvar-order-openapi.yml
-      - type: JSONSchema
-        url: json-schema/narvar-order-schema.json
-      - type: Examples
-        url: examples/narvar-create-order-example.json
-  - name: Narvar Shipment API
-    description: Submit and update shipment records with carrier, tracking number, and destination data to enable real-time order tracking and delivery notifications.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://support.narvar.com/hc/en-us
-    baseURL: https://api.narvar.com
-    tags:
-      - Shipments
-      - Tracking
-      - Carriers
-    properties:
-      - type: Documentation
-        url: https://support.narvar.com/hc/en-us
-  - name: Narvar Returns API
-    description: Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications for return status updates.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://support.narvar.com/hc/en-us
-    baseURL: https://api.narvar.com
-    tags:
-      - Returns
-      - Exchanges
-      - Reverse Logistics
-    properties:
-      - type: Documentation
-        url: https://support.narvar.com/hc/en-us
+- name: Narvar Shipment API
+  description: >-
+    Submit and update shipment records with carrier, tracking number, and destination data to enable real-time
+    order tracking and delivery notifications.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://support.narvar.com/hc/en-us
+  baseURL: https://api.narvar.com
+  tags:
+  - Shipments
+  - Tracking
+  - Carriers
+  properties:
+  - type: Documentation
+    url: https://support.narvar.com/hc/en-us
+- name: Narvar Returns API
+  description: >-
+    Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications
+    for return status updates.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://support.narvar.com/hc/en-us
+  baseURL: https://api.narvar.com
+  tags:
+  - Returns
+  - Exchanges
+  - Reverse Logistics
+  properties:
+  - type: Documentation
+    url: https://support.narvar.com/hc/en-us
+- aid: narvar:narvar-orders-api
+  name: Narvar Orders API
+  description: The Orders API from Narvar — 3 operation(s) for orders.
+  humanURL: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
+  baseURL: https://api.narvar.com
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/narvar-orders-api-openapi.yml
+  - type: Documentation
+    url: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
+  - type: MicrosoftConnector
+    url: https://learn.microsoft.com/en-us/connectors/narvar/
+  - type: JSONSchema
+    url: json-schema/narvar-order-schema.json
+  - type: Examples
+    url: examples/narvar-create-order-example.json
 common:
   - type: AgenticAccess
     url: agentic-access/narvar-agentic-access.yml
