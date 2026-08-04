@@ -1,0 +1,14 @@
+{
+  "provider": "narvar",
+  "sources": [
+    "narvar-orders-api-openapi.yml"
+  ],
+  "outputs": [
+    "narvar-orders-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
