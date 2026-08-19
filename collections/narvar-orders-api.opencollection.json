@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Narvar Orders API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Orders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create or Update Orders",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.narvar.com/api/v1/orders",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "This will create a new order or send new information about an existing order"
+        },
+        {
+          "info": {
+            "name": "Retrieve Order",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.narvar.com/api/v1/orders/:OrderNumber",
+            "params": [
+              {
+                "name": "$OrderNumber",
+                "value": "",
+                "type": "path",
+                "description": "The order number"
+              }
+            ]
+          },
+          "docs": "This operation is used to retrieve order details"
+        },
+        {
+          "info": {
+            "name": "Create or Update Shipments",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.narvar.com/api/v1/orders/:OrderNumber/shipments",
+            "params": [
+              {
+                "name": "$OrderNumber",
+                "value": "",
+                "type": "path",
+                "description": "The order number"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "This will update an order with a shipment record or change"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

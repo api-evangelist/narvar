@@ -1,0 +1,1835 @@
+{
+  "item": [
+    {
+      "id": "155ab19a-610d-4da7-a0df-0ca4d5f06f6c",
+      "name": "Orders",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "81fc2c0c-65f6-4f0e-bc84-fb254b06b422",
+          "name": "Create or Update Orders",
+          "request": {
+            "name": "Create or Update Orders",
+            "description": {
+              "content": "This will create a new order or send new information about an existing order",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "orders"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "14b89e2d-a89c-44a7-8ca4-3d449ece87b6",
+              "name": "200",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"messages\": [\n    {\n      \"code\": \"string\",\n      \"message\": \"string\"\n    },\n    {\n      \"code\": \"string\",\n      \"message\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "65fde244-599b-49fc-9343-fa1d200eaf40",
+              "name": "304",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Modified",
+              "code": 304,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "dfe169b9-e1e8-422b-99ef-a6dbbc79bbff",
+              "name": "400",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"messages\": [\n    {\n      \"level\": \"string\",\n      \"code\": \"string\",\n      \"message\": \"string\"\n    },\n    {\n      \"level\": \"string\",\n      \"code\": \"string\",\n      \"message\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e11925b5-9e58-455e-903d-35072191405a",
+              "name": "401",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d13cb863-48e5-4d95-aa11-1db348685253",
+              "name": "403",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b2f05bc2-31a8-4ecb-9e3c-37b8b19bfdf0",
+              "name": "404",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "da0153a7-b3fa-4101-853d-c92da63977e2",
+              "name": "405",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ec603fcb-8abd-46ea-a361-9c7ac642de5b",
+              "name": "409",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2ac9124-4552-44be-8516-38de35127ee2",
+              "name": "500",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "3ba133c5-16e1-4c0c-885d-2d205fb5ef5a",
+              "name": "503",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"order_number\": \"<string>\",\n    \"order_date\": \"<string>\",\n    \"order_items\": [\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      },\n      {\n        \"item_id\": \"<string>\",\n        \"item_image\": \"<string>\",\n        \"sku\": \"<string>\",\n        \"name\": \"<string>\",\n        \"quantity\": \"<integer>\",\n        \"item_promise_date\": \"<string>\"\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"<string>\",\n        \"last_name\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"phone_extension\": \"<string>\",\n        \"email\": \"<string>\",\n        \"address\": {\n          \"city\": \"<string>\",\n          \"state\": \"<string>\",\n          \"zip\": \"<string>\",\n          \"country\": \"<string>\"\n        }\n      },\n      \"amount\": \"<float>\",\n      \"tax_amount\": \"<float>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "878e429f-6625-4741-8414-68634d982b24",
+          "name": "Retrieve Order",
+          "request": {
+            "name": "Retrieve Order",
+            "description": {
+              "content": "This operation is used to retrieve order details",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "orders",
+                ":OrderNumber"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "$OrderNumber",
+                  "description": "(Required) The order number"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "36377b38-1f6f-4ae0-a8d9-0ca871dbeaf7",
+              "name": "200",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"order_info\": {\n    \"order_number\": \"string\",\n    \"order_date\": \"string\",\n    \"order_items\": [\n      {\n        \"fulfillment_status\": \"string\",\n        \"item_image\": \"string\",\n        \"item_url\": \"string\",\n        \"name\": \"string\",\n        \"quantity\": 5754,\n        \"sku\": \"string\",\n        \"unit_price\": 4235,\n        \"categories\": [\n          \"string\",\n          \"string\"\n        ],\n        \"is_backordered\": true,\n        \"vendors\": [\n          {\n            \"phone\": \"string\",\n            \"name\": \"string\",\n            \"address\": {\n              \"street_1\": \"string\",\n              \"city\": \"string\",\n              \"state\": \"string\",\n              \"zip\": \"string\",\n              \"country\": \"string\",\n              \"street_2\": \"string\"\n            },\n            \"email\": \"string\",\n            \"type\": \"string\"\n          },\n          {\n            \"phone\": \"string\",\n            \"name\": \"string\",\n            \"address\": {\n              \"street_1\": \"string\",\n              \"city\": \"string\",\n              \"state\": \"string\",\n              \"zip\": \"string\",\n              \"country\": \"string\",\n              \"street_2\": \"string\"\n            },\n            \"email\": \"string\",\n            \"type\": \"string\"\n          }\n        ],\n        \"description\": \"string\",\n        \"discount_amount\": 4384.73453449699,\n        \"discount_percent\": 7945.403225703724,\n        \"final_sale_date\": \"string\",\n        \"is_final_sale\": false,\n        \"is_gift\": false,\n        \"item_id\": \"string\",\n        \"item_promise_date\": \"string\",\n        \"line_number\": 3157,\n        \"fulfillment_type\": \"string\",\n        \"dimensions\": {\n          \"uom\": \"string\",\n          \"length\": 5418.251268160653,\n          \"width\": 2580.7675271858866,\n          \"height\": 4871.802998634453,\n          \"weight\": 3107.9530230972673,\n          \"weight_uom\": \"string\"\n        },\n        \"attributes\": {\n          \"ad9\": {\n            \"promotion\": \"string\"\n          },\n          \"pariaturfb\": {\n            \"promotion\": \"string\"\n          },\n          \"adipisicing_1c\": {\n            \"promotion\": \"string\"\n          },\n          \"tempor639\": {\n            \"promotion\": \"string\"\n          },\n          \"dolor_e\": {\n            \"promotion\": \"string\"\n          },\n          \"consectetur_b\": {\n            \"promotion\": \"string\"\n          },\n          \"cupidatat8\": {\n            \"promotion\": \"string\"\n          },\n          \"consequatbc\": {\n            \"promotion\": \"string\"\n          }\n        },\n        \"events\": [\n          {\n            \"event\": \"string\",\n            \"quantity\": 2491,\n            \"sequence\": 9387,\n            \"date\": \"string\"\n          },\n          {\n            \"event\": \"string\",\n            \"quantity\": 2906,\n            \"sequence\": 9639,\n            \"date\": \"string\"\n          }\n        ],\n        \"anticipated_ship_date\": \"string\",\n        \"original_unit_price\": 6609,\n        \"original_line_price\": 7181,\n        \"line_price\": 7405\n      },\n      {\n        \"fulfillment_status\": \"string\",\n        \"item_image\": \"string\",\n        \"item_url\": \"string\",\n        \"name\": \"string\",\n        \"quantity\": 9384,\n        \"sku\": \"string\",\n        \"unit_price\": 8186,\n        \"categories\": [\n          \"string\",\n          \"string\"\n        ],\n        \"is_backordered\": true,\n        \"vendors\": [\n          {\n            \"phone\": \"string\",\n            \"name\": \"string\",\n            \"address\": {\n              \"street_1\": \"string\",\n              \"city\": \"string\",\n              \"state\": \"string\",\n              \"zip\": \"string\",\n              \"country\": \"string\",\n              \"street_2\": \"string\"\n            },\n            \"email\": \"string\",\n            \"type\": \"string\"\n          },\n          {\n            \"phone\": \"string\",\n            \"name\": \"string\",\n            \"address\": {\n              \"street_1\": \"string\",\n              \"city\": \"string\",\n              \"state\": \"string\",\n              \"zip\": \"string\",\n              \"country\": \"string\",\n              \"street_2\": \"string\"\n            },\n            \"email\": \"string\",\n            \"type\": \"string\"\n          }\n        ],\n        \"description\": \"string\",\n        \"discount_amount\": 7704.817868151108,\n        \"discount_percent\": 7918.147482126598,\n        \"final_sale_date\": \"string\",\n        \"is_final_sale\": true,\n        \"is_gift\": false,\n        \"item_id\": \"string\",\n        \"item_promise_date\": \"string\",\n        \"line_number\": 6210,\n        \"fulfillment_type\": \"string\",\n        \"dimensions\": {\n          \"uom\": \"string\",\n          \"length\": 6071.941093446264,\n          \"width\": 6698.229949525584,\n          \"height\": 120.15192371773287,\n          \"weight\": 7500.5575829110285,\n          \"weight_uom\": \"string\"\n        },\n        \"attributes\": {\n          \"ad9\": {\n            \"promotion\": \"string\"\n          },\n          \"pariaturfb\": {\n            \"promotion\": \"string\"\n          },\n          \"adipisicing_1c\": {\n            \"promotion\": \"string\"\n          },\n          \"tempor639\": {\n            \"promotion\": \"string\"\n          },\n          \"dolor_e\": {\n            \"promotion\": \"string\"\n          },\n          \"consectetur_b\": {\n            \"promotion\": \"string\"\n          },\n          \"cupidatat8\": {\n            \"promotion\": \"string\"\n          },\n          \"consequatbc\": {\n            \"promotion\": \"string\"\n          }\n        },\n        \"events\": [\n          {\n            \"event\": \"string\",\n            \"quantity\": 5567,\n            \"sequence\": 1704,\n            \"date\": \"string\"\n          },\n          {\n            \"event\": \"string\",\n            \"quantity\": 642,\n            \"sequence\": 7407,\n            \"date\": \"string\"\n          }\n        ],\n        \"anticipated_ship_date\": \"string\",\n        \"original_unit_price\": 7411,\n        \"original_line_price\": 2754,\n        \"line_price\": 9640\n      }\n    ],\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"item_id\": \"string\",\n            \"sku\": \"string\",\n            \"quantity\": 5190\n          },\n          {\n            \"item_id\": \"string\",\n            \"sku\": \"string\",\n            \"quantity\": 6351\n          }\n        ],\n        \"carrier\": \"string\",\n        \"ship_date\": \"string\",\n        \"tracking_number\": \"string\",\n        \"shipped_to\": {\n          \"first_name\": \"string\",\n          \"last_name\": \"string\",\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"email\": \"string\",\n          \"phone\": \"string\",\n          \"location_id\": \"string\"\n        },\n        \"ship_method\": \"string\",\n        \"carrier_service\": \"string\",\n        \"ship_source\": \"string\",\n        \"ship_discount\": 9286.242764241046,\n        \"ship_tax\": 3494.724070383567,\n        \"ship_total\": 3095.325257680881,\n        \"shipped_from\": {\n          \"company_name\": \"string\",\n          \"email\": \"string\",\n          \"first_name\": \"string\",\n          \"last_name\": \"string\",\n          \"phone\": \"string\",\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"location_id\": \"string\"\n        },\n        \"attribute\": {\n          \"anim_a36\": {\n            \"promotion\": \"string\"\n          },\n          \"sunt_9\": {\n            \"promotion\": \"string\"\n          },\n          \"eu1bd\": {\n            \"promotion\": \"string\"\n          }\n        }\n      },\n      {\n        \"items_info\": [\n          {\n            \"item_id\": \"string\",\n            \"sku\": \"string\",\n            \"quantity\": 2655\n          },\n          {\n            \"item_id\": \"string\",\n            \"sku\": \"string\",\n            \"quantity\": 8167\n          }\n        ],\n        \"carrier\": \"string\",\n        \"ship_date\": \"string\",\n        \"tracking_number\": \"string\",\n        \"shipped_to\": {\n          \"first_name\": \"string\",\n          \"last_name\": \"string\",\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"email\": \"string\",\n          \"phone\": \"string\",\n          \"location_id\": \"string\"\n        },\n        \"ship_method\": \"string\",\n        \"carrier_service\": \"string\",\n        \"ship_source\": \"string\",\n        \"ship_discount\": 3358.9638621682193,\n        \"ship_tax\": 6236.302573654767,\n        \"ship_total\": 6903.330724949862,\n        \"shipped_from\": {\n          \"company_name\": \"string\",\n          \"email\": \"string\",\n          \"first_name\": \"string\",\n          \"last_name\": \"string\",\n          \"phone\": \"string\",\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"location_id\": \"string\"\n        },\n        \"attribute\": {\n          \"anim_a36\": {\n            \"promotion\": \"string\"\n          },\n          \"sunt_9\": {\n            \"promotion\": \"string\"\n          },\n          \"eu1bd\": {\n            \"promotion\": \"string\"\n          }\n        }\n      }\n    ],\n    \"billing\": {\n      \"billed_to\": {\n        \"first_name\": \"string\",\n        \"last_name\": \"string\",\n        \"address\": {\n          \"street_1\": \"string\",\n          \"city\": \"string\",\n          \"state\": \"string\",\n          \"zip\": \"string\",\n          \"country\": \"string\",\n          \"street_2\": \"string\"\n        },\n        \"email\": \"string\",\n        \"phone\": \"string\",\n        \"location_id\": \"string\"\n      },\n      \"amount\": 1265.662225081785,\n      \"payments\": [\n        {\n          \"is_gift_card\": \"string\",\n          \"merchant\": \"string\",\n          \"method\": \"string\",\n          \"expiration_date\": \"string\"\n        },\n        {\n          \"is_gift_card\": \"string\",\n          \"merchant\": \"string\",\n          \"method\": \"string\",\n          \"expiration_date\": \"string\"\n        }\n      ],\n      \"tax_amount\": 4432.671789099062,\n      \"tax_rate\": 4610.598690474182,\n      \"shipping_handling\": 103.60297199363711\n    },\n    \"pickups\": [\n      {\n        \"id\": \"string\",\n        \"items_info\": [\n          {\n            \"sku\": \"string\",\n            \"quantity\": 324,\n            \"item_id\": \"string\"\n          },\n          {\n            \"sku\": \"string\",\n            \"quantity\": 6265,\n            \"item_id\": \"string\"\n          }\n        ],\n        \"status\": {\n          \"code\": \"string\",\n          \"date\": \"string\",\n          \"message\": \"string\"\n        },\n        \"store\": {\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"name\": \"string\",\n          \"id\": \"string\",\n          \"store_area\": \"string\",\n          \"url\": \"string\",\n          \"phone_number\": \"string\",\n          \"hours\": [\n            {\n              \"open\": \"string\",\n              \"close\": \"string\"\n            },\n            {\n              \"open\": \"string\",\n              \"close\": \"string\"\n            }\n          ]\n        },\n        \"type\": \"string\",\n        \"eta\": \"string\",\n        \"pickup_by_date\": \"string\",\n        \"attributes\": {\n          \"ex_8\": {\n            \"promotion\": \"string\"\n          },\n          \"tempor302\": {\n            \"promotion\": \"string\"\n          },\n          \"minim_e\": {\n            \"promotion\": \"string\"\n          },\n          \"do0a\": {\n            \"promotion\": \"string\"\n          },\n          \"voluptate_e\": {\n            \"promotion\": \"string\"\n          },\n          \"aute29f\": {\n            \"promotion\": \"string\"\n          }\n        },\n        \"carrier\": \"string\",\n        \"tracking_number\": \"string\",\n        \"ship_date\": \"string\",\n        \"collection_token\": \"string\"\n      },\n      {\n        \"id\": \"string\",\n        \"items_info\": [\n          {\n            \"sku\": \"string\",\n            \"quantity\": 8891,\n            \"item_id\": \"string\"\n          },\n          {\n            \"sku\": \"string\",\n            \"quantity\": 2304,\n            \"item_id\": \"string\"\n          }\n        ],\n        \"status\": {\n          \"code\": \"string\",\n          \"date\": \"string\",\n          \"message\": \"string\"\n        },\n        \"store\": {\n          \"address\": {\n            \"street_1\": \"string\",\n            \"city\": \"string\",\n            \"state\": \"string\",\n            \"zip\": \"string\",\n            \"country\": \"string\",\n            \"street_2\": \"string\"\n          },\n          \"name\": \"string\",\n          \"id\": \"string\",\n          \"store_area\": \"string\",\n          \"url\": \"string\",\n          \"phone_number\": \"string\",\n          \"hours\": [\n            {\n              \"open\": \"string\",\n              \"close\": \"string\"\n            },\n            {\n              \"open\": \"string\",\n              \"close\": \"string\"\n            }\n          ]\n        },\n        \"type\": \"string\",\n        \"eta\": \"string\",\n        \"pickup_by_date\": \"string\",\n        \"attributes\": {\n          \"ex_8\": {\n            \"promotion\": \"string\"\n          },\n          \"tempor302\": {\n            \"promotion\": \"string\"\n          },\n          \"minim_e\": {\n            \"promotion\": \"string\"\n          },\n          \"do0a\": {\n            \"promotion\": \"string\"\n          },\n          \"voluptate_e\": {\n            \"promotion\": \"string\"\n          },\n          \"aute29f\": {\n            \"promotion\": \"string\"\n          }\n        },\n        \"carrier\": \"string\",\n        \"tracking_number\": \"string\",\n        \"ship_date\": \"string\",\n        \"collection_token\": \"string\"\n      }\n    ],\n    \"customer\": {\n      \"customer_id\": \"string\",\n      \"address\": {\n        \"street_1\": \"string\",\n        \"city\": \"string\",\n        \"state\": \"string\",\n        \"zip\": \"string\",\n        \"country\": \"string\",\n        \"street_2\": \"string\"\n      },\n      \"email\": \"string\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\",\n      \"phone\": \"string\",\n      \"customer_type\": \"string\",\n      \"customer_tier\": \"string\",\n      \"notification_preferences\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    \"attributes\": {\n      \"consequatf3\": {\n        \"promotion\": \"string\"\n      },\n      \"eu0\": {\n        \"promotion\": \"string\"\n      }\n    },\n    \"events\": [\n      {\n        \"event\": \"string\",\n        \"date\": \"string\"\n      },\n      {\n        \"event\": \"string\",\n        \"date\": \"string\"\n      }\n    ],\n    \"currency_code\": \"string\",\n    \"order_promise_date\": \"string\",\n    \"selected_ship_method\": \"string\"\n  },\n  \"status\": \"string\",\n  \"messages\": [\n    {\n      \"code\": \"string\"\n    },\n    {\n      \"code\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "15cebef3-02ab-4a3c-af1e-a0f266864e42",
+              "name": "201",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "60759188-9b09-4b42-b863-78b7e2303bb1",
+              "name": "304",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Modified",
+              "code": 304,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e5d57fe6-2b8a-4735-84d1-4ca2f07206e2",
+              "name": "400",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "1f0c8334-cea4-44dc-9eb2-575f78a0a008",
+              "name": "401",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8f60643b-775f-4bc2-9d39-4a840010c8eb",
+              "name": "403",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "0edd9324-0607-475a-add0-8576c9206781",
+              "name": "404",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "391f751e-27dc-42e5-bf8b-7499df64320f",
+              "name": "405",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a9da2cb6-4943-4d50-9e5b-0ebcd21360e2",
+              "name": "500",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "de09dde2-8c34-4784-a4d6-56c5ac330120",
+              "name": "503",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3fc8ed7f-0f6c-4bc1-99b6-f7cf4f76d308",
+          "name": "Create or Update Shipments",
+          "request": {
+            "name": "Create or Update Shipments",
+            "description": {
+              "content": "This will update an order with a shipment record or change",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "orders",
+                ":OrderNumber",
+                "shipments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "$OrderNumber",
+                  "description": "(Required) The order number"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "688a9b4e-550c-4fad-a506-7bf88012f561",
+              "name": "200",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"messages\": [\n    {\n      \"code\": \"string\",\n      \"message\": \"string\"\n    },\n    {\n      \"code\": \"string\",\n      \"message\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e7a43ecb-77c3-4fa8-844b-b691c69b7c73",
+              "name": "304",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Modified",
+              "code": 304,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "37bd19f1-ca76-4cd5-8fc8-0e5aef8ad1f3",
+              "name": "400",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"string\",\n  \"messages\": [\n    {\n      \"level\": \"string\",\n      \"code\": \"string\",\n      \"message\": \"string\"\n    },\n    {\n      \"level\": \"string\",\n      \"code\": \"string\",\n      \"message\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9c6aa4de-9020-4ffe-aaf6-c426b760d21d",
+              "name": "401",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "de6d8e96-9f64-4e84-a4ac-eae24dff25e8",
+              "name": "403",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a2548416-7e34-41be-a164-75092c7d4d5d",
+              "name": "404",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "cd395f71-99ac-4d30-86bf-933538ebc8bd",
+              "name": "405",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "683ecacd-3881-4d91-8dd7-f3f0071aa959",
+              "name": "409",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "5ad62162-b103-41f7-aba4-b32f519eef09",
+              "name": "500",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "c42b431f-96ee-48e7-8740-6791859ed368",
+              "name": "503",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":OrderNumber",
+                    "shipments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "$OrderNumber",
+                      "description": "(Required) The order number"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"order_info\": {\n    \"shipments\": [\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      },\n      {\n        \"items_info\": [\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          },\n          {\n            \"quantity\": \"<integer>\",\n            \"sku\": \"<string>\",\n            \"item_id\": \"<string>\"\n          }\n        ],\n        \"carrier\": \"<string>\",\n        \"shipped_to\": {\n          \"first_name\": \"<string>\",\n          \"last_name\": \"<string>\",\n          \"phone\": \"<string>\",\n          \"email\": \"<string>\",\n          \"address\": {\n            \"street_1\": \"<string>\",\n            \"street_2\": \"<string>\",\n            \"city\": \"<string>\",\n            \"state\": \"<string>\",\n            \"zip\": \"<string>\",\n            \"country\": \"<string>\"\n          }\n        },\n        \"ship_date\": \"<string>\",\n        \"tracking_number\": \"<string>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"string\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.narvar.com/api/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "da8afdbd-4a58-4fb0-9a68-6ba30871a0f2",
+    "name": "Narvar Orders API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Narvar provides connection with Narvar portal. Alows create and update of orders on narvar portal as well as viewing already created orders.\n\nContact Support:\n Name: Microsoft Dynamics\n Email: iomdri@microsoft.com",
+      "type": "text/plain"
+    }
+  }
+}
