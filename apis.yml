@@ -28,6 +28,15 @@ tags:
   - Delivery Notifications
   - Returns
   - Exchanges
+  - E-Commerce
+  - Shipments
+  - Customer Experience
+tags_raw:
+  - Post-Purchase
+  - Order Tracking
+  - Delivery Notifications
+  - Returns
+  - Exchanges
   - Ecommerce
   - Shipments
   - Customer Experience
@@ -70,6 +79,8 @@ apis:
   humanURL: https://support.narvar.com/hc/en-us/articles/360052681514-Integration-Guide
   baseURL: https://api.narvar.com
   tags:
+  - Order
+  tags_raw:
   - Orders
   properties:
   - type: OpenAPI
