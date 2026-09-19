@@ -40,7 +40,7 @@ tags:
   - Order Tracking
   - Delivery Notifications
   - Returns
-  - Exchanges
+  - Exchange
   - E-Commerce
   - Shipments
   - Customer Experience
@@ -68,6 +68,10 @@ apis:
   tags:
   - Shipments
   - Tracking
+  - Carrier
+  tags_raw:
+  - Shipments
+  - Tracking
   - Carriers
   properties:
   - type: Documentation
@@ -80,6 +84,10 @@ apis:
   humanURL: https://support.narvar.com/hc/en-us
   baseURL: https://api.narvar.com
   tags:
+  - Returns
+  - Exchange
+  - Reverse Logistics
+  tags_raw:
   - Returns
   - Exchanges
   - Reverse Logistics
