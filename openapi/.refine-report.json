@@ -1,7 +1,7 @@
 {
   "provider": "narvar",
   "sources": [
-    "narvar-orders-api-openapi.yml"
+    "_original/narvar-order-openapi.yml"
   ],
   "outputs": [
     "narvar-orders-api-openapi.yml"
@@ -9,6 +9,16 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "narvar-order-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "narvar-order-openapi.yml: tagged paths POST /orders -> Orders",
+    "narvar-order-openapi.yml: tagged paths GET /orders/{OrderNumber} -> Orders",
+    "narvar-order-openapi.yml: tagged paths PUT /orders/{OrderNumber}/shipments -> Orders",
+    "narvar-order-openapi.yml: declared missing tag: Orders",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "narvar-orders-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
