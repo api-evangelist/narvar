@@ -40,7 +40,6 @@ tags:
   - Order Tracking
   - Delivery Notifications
   - Returns
-  - Exchange
   - E-Commerce
   - Shipments
   - Customer Experience
@@ -49,7 +48,6 @@ tags_raw:
   - Order Tracking
   - Delivery Notifications
   - Returns
-  - Exchanges
   - Ecommerce
   - Shipments
   - Customer Experience
@@ -115,6 +113,9 @@ apis:
   - type: Examples
     url: examples/narvar-create-order-example.json
 common:
+  - type: CapabilityMap
+    url: capabilities/narvar-capability-edges.yml
+    name: Narvar Business Capability Map
   - type: AgenticAccess
     url: agentic-access/narvar-agentic-access.yml
   - type: TrustCenter
@@ -154,3 +155,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-tags-removed:
+- Exchange
