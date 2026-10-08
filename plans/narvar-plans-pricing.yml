@@ -91,3 +91,30 @@ plans:
       - name: SLA
         type: boolean
         value: true
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Starter
+    access: paid
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Pro
+    access: paid
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: enterprise
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods: []
