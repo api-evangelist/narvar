@@ -1,16 +1,51 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/narvar/integrations
 - https://n8n.io/integrations/narvar/
 - https://composio.dev/toolkits/narvar
 - https://monid.ai/tools/narvar
 checked:
+- gorgias/integrations/gorgias-integration-edges.yml
 - https://composio.dev/toolkits/narvar
 - https://monid.ai/tools/narvar
 - https://n8n.io/integrations/narvar/
 - https://zapier.com/apps/narvar/integrations
+- zendesk/integrations/zendesk-integration-edges.yml
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Gorgias (own)
+  partner: gorgias
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.gorgias.com/apps/narvar
+  mirror_of: gorgias/integrations/gorgias-integration-edges.yml
+  apps:
+  - Narvar Return & Exchange
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/204089/narvar-connect-and-care/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - Narvar Connect and Care
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+  category: eComm and Payments
 templates: []
