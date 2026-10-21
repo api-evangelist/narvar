@@ -28,3 +28,29 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: narvar-bigcommerce-own
+  label: BigCommerce (own)
+  partner: bigcommerce
+  partner_name: BigCommerce (own)
+  category: Catalog & Order Management, Returns Processing (RMA), Shipping & Fulfillment, Tracking
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.bigcommerce.com/apps/narvar-track-messaging/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: narvar-salesforce-commerce-cloud-own
+  label: Salesforce Commerce Cloud (own)
+  partner: salesforce-commerce-cloud
+  partner_name: Salesforce Commerce Cloud (own)
+  category: eCommerce
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FtS6MUAV
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
