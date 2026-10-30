@@ -1,4 +1,4 @@
-# Narvar (narvar)
+# Narvar
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,58 +64,153 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Narvar is a post-purchase commerce platform serving 1,500+ global retail brands with intelligent personalization and automation across delivery, returns, and customer engagement. The platform provides APIs for order creation and updates, shipment tracking, returns and exchange management, and proactive multi-channel customer notifications. Narvar's IRIS AI engine is trained on 74 billion+ annual interactions to deliver predictive post-purchase intelligence, with integrations spanning 1,000+ carriers and major commerce platforms.
+Narvar is a post-purchase commerce platform serving 1,500+ global retail brands with intelligent personalization and automation across delivery, returns, and customer engagement. The platform provides APIs for order creation and updates, shipment tracking, returns and exchange management, and proactive multi-channel customer notifications. Narvar's IRIS AI engine is trained on 74 billion+ annual interactions to deliver predictive post-purchase intelligence. Integrations span 1,000+ carriers and major commerce platforms including Shopify, Salesforce, Magento, and BigCommerce.
 
-APIs.json: [https://raw.githubusercontent.com/api-evangelist/narvar/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/narvar/refs/heads/main/apis.yml)
+**Areas:** Post-Purchase · Order Tracking · Delivery Notifications · Returns · E-Commerce · Shipments · Customer Experience
 
-Managed using [Naftiko Fleet](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=narvar-api-evangelist&utm_content=repo)
+## Narvar on APIs.io
 
-## Tags
+Everything profiled for Narvar is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/narvar/](https://apis.io/providers/narvar/)** — or go straight to one of the APIs or properties below.
 
-- Post-Purchase
-- Order Tracking
-- Delivery Notifications
-- Returns
-- Exchanges
-- Ecommerce
-- Shipments
-- Customer Experience
+### APIs (3)
 
-## APIs
+- [Narvar Shipment API](https://apis.io/apis/narvar/narvar-shipment-api/) — Submit and update shipment records with carrier, tracking number, and destination data to enable real-time order tracking and delivery notifications.
+- [Narvar Returns API](https://apis.io/apis/narvar/narvar-returns-api/) — Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications for return status updates.
+- [Narvar Orders API](https://apis.io/apis/narvar/narvar-orders-api/) — The Orders API from Narvar — 3 operation(s) for orders.
 
-| Name | Description |
-|------|-------------|
-| Narvar Order API | Create and update orders, including order items, billing, customer, and fulfillment data, to power post-purchase tracking experiences. |
-| Narvar Shipment API | Submit and update shipment records with carrier, tracking number, and destination data to enable real-time order tracking and delivery notifications. |
-| Narvar Returns API | Initiate and manage returns and exchanges, generate return labels, and receive webhook notifications for return status updates. |
+### Published properties
 
-## Plans, Rate Limits, and FinOps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Resource | Path |
-|----------|------|
-| Plans & Pricing | [plans/narvar-plans-pricing.yml](plans/narvar-plans-pricing.yml) |
-| Rate Limits | [rate-limits/narvar-rate-limits.yml](rate-limits/narvar-rate-limits.yml) |
-| FinOps | [finops/narvar-finops.yml](finops/narvar-finops.yml) |
+#### Agentic access (1)
 
-## Timestamps
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- **Created:** 2026-06-12
-- **Modified:** 2026-06-12
+- [Narvar Agentic Access](https://apis.io/agentic-access/narvar/narvar-agentic-access/)
 
-## Common Properties
+#### JSON Schema (1)
 
-| Type | URL |
-|------|-----|
-| Website | https://corp.narvar.com/ |
-| Documentation | https://support.narvar.com/hc/en-us |
-| GitHub Organization | https://github.com/narvar |
-| LinkedIn | https://www.linkedin.com/company/narvar |
-| X (Twitter) | https://twitter.com/narvarinc |
-| Blog | https://corp.narvar.com/blog |
-| Status Page | https://status.narvar.com/ |
+The data models the API reads and writes.
 
-## Maintainers
+- [NarvarOrder](https://apis.io/schemas/narvar/narvar-order/)
 
-| Name | Email |
-|------|-------|
-| Kin Lane | kin@apievangelist.com |
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Narvar Context](https://apis.io/jsonld/narvar/narvar-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Narvar Vocabulary](https://apis.io/vocabularies/narvar/narvar-vocabulary/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Narvar Create Order Example](https://apis.io/examples/narvar/narvar-create-order-example/)
+
+#### Collections (1)
+
+Postman and Open Collection request collections.
+
+- [Narvar Orders API](https://apis.io/collections/narvar/open-narvar-orders-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Narvar — jsonschema rules](https://apis.io/rules/narvar/narvar-jsonschema-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Narvar Authentication](https://apis.io/security/narvar/narvar-authentication/)
+- [Narvar Domain Security](https://apis.io/security/narvar/narvar-domain-security/)
+- [Narvar Trust Center](https://apis.io/security/narvar/narvar-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Narvar Plans Pricing](https://apis.io/plans/narvar/narvar-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Narvar Rate Limits](https://apis.io/rate-limits/narvar/narvar-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Narvar Finops](https://apis.io/finops/narvar/narvar-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://corp.narvar.com/)
+- [Documentation](https://support.narvar.com/hc/en-us)
+- [Blog](https://corp.narvar.com/blog)
+- [GitHub](https://github.com/narvar)
+- [Status](https://status.narvar.com/)
+
+## API Evangelist rating
+
+**Kin Score 38.3** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 64.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 25.0 |
+| Access clarity | 15.8 |
+
+**Agent readiness 20.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/narvar/](https://apis.io/providers/narvar/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Narvar: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/narvar/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
